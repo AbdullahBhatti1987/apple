@@ -1,0 +1,209 @@
+:root{
+    --header: #1D1D1F;
+    --header1: #121212;
+    --navbarbgcolor: #000000;
+}
+.bgtheme{
+    background-color: var(--header)!important;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.bgsalmon{
+    background-color: salmon!important;
+}
+.bgseagreen{
+    background-color: seagreen!important;
+}
+a{
+    text-decoration: none!important;
+}
+header{
+    background-color: var(--header);
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 99!important;
+}
+.px-10{
+    padding: 0% 10%!important;
+}
+.px-15{
+    padding: 0% 15%!important;
+}
+.nav{
+    border: none!important;
+    border-bottom: none!important;
+}
+header .search ul{
+    list-style: none;
+}
+header .search ul li a{
+    font-size: xx-large;
+    color: white!important;
+}
+header div.navbar ul li > a, div.logo a, div.search > a, button{
+    color: white!important;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+header .navbar ul, li ul{
+    list-style: none;
+}
+header .navbar > a:hover{
+    opacity: 0.8;
+    border: none!important;
+}
+header .navbar > a:hover, a:focus, a:active{
+    color: white!important;
+    border: none!important;
+}
+header .navbar > a:focus{
+    color: white!important;
+    border: none!important;
+}
+header .navbar > a:active{
+    color: white!important;
+    border: none!important;
+}
+/* ==================Content==================== */
+
+.picture1{
+    background-image: url(./images/apple1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    background-position: top;
+}
+main h1{
+    font-size: 40px!important;
+    text-align: center!important;
+}
+main h3{
+    font-size: 20px!important;
+    text-align: center!important;
+    padding: 0px 20%;
+}
+main a{
+    font-size: 25px;
+}
+
+.picture2{
+    background-image: url(./images/iphonecamera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    padding-top: 80px;
+    background-position: center;
+}
+.picture3{
+    background-image: url(./images/vrbox.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    padding-bottom: 50px;
+    background-position: center;
+}
+.picture1, .picture2, .picture3{
+    height: 625px!important;
+    padding-top: 50px!important;
+    background-repeat: no-repeat!important;
+}
+.picture3, .picture4, .picture5, .picture6, .picture7, .picture8, .picture9 {
+    /* min-height: 325px!important; */
+    min-height: 500px!important;
+    padding-top: 20px!important;
+    background-repeat: no-repeat!important;
+}
+.text-red{
+    color: red;
+}
+.picture4{
+    background-image: url(./images/watches.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.picture5{
+    background-image: url(./images/macs.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.picture6{
+    background-image: url(./images/ipads.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.picture7{
+    background-image: url(./images/airbuds.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.picture8{
+    background-image: url(./images/card.jpeg);
+    background-size: contain;  
+    background-position: bottom;
+}
+.picture9{
+    background-image: url(./images/exch.jpg);
+    background-size: contain;
+    background-position: bottom;
+}
+.message p{
+    text-align: justify;
+    font-size: small;
+}
+
+
+footer div.listing{
+    height: 500px;
+}
+
+footer a{
+    color: gray;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+    header nav{
+        padding: 0px;
+        /* justify-content: space-between!important; */
+    }
+   
+    header nav div.logo{
+        justify-content: start!important;
+    }
+    header nav div.search{
+        justify-content: end!important;
+        gap: 15px;
+    }
+    /* header nav div.search{ */
+/* } */
+    .picture1{
+        background-image: url(./images/applep.jpg);
+        order: 1;
+    }
+    .picture2{
+        order: 3;
+    }
+    .picture3{
+        order: 2;
+    }
+    footer div.listing{
+        overflow-x: scroll;
+    }
+    
+
+}
