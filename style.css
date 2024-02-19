@@ -9,6 +9,16 @@
     --bgvrbox: #F5F5F7;
     --bgcard: #FAFAFA;
 }
+
+.bgiphone{
+    background-color: var(--bgiphone);
+}
+.bgvrbox{
+    background-color: var(--bgvrbox);
+}
+.bgcard{
+    background-color: var(--bgcard);
+}
 body{
     max-width: 2340px;
     margin: auto;
@@ -24,7 +34,7 @@ div{
     display: flex;
 }
 header{
-    height: 50px;
+    height: 50px!important;
     background-color: var(--header);
     position: sticky;
 }
@@ -93,7 +103,6 @@ header .offcanvas a{
 .picture9{
     background-image: url(./images/exch.jpg);
 }
-
 h6{
     max-width: 250px ;
 }
@@ -101,24 +110,38 @@ h6{
 .heading *{
     text-align: center;
 }
-
-.container1 h1{
-    font-size: xx-large;
-}
-
 .messages p{
     font-size: 14px;
     color: gray;
     line-height: 17px;
     text-align: justify;
 }
-
 .listing-large a, .listing-small a{
     color: gray;
 }
-
-
-
+.overfall{
+    height: 500px;
+    background-color: #121212;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+}
+.overfall h6{
+    color: gray;
+}
+.overfall a{
+    color: white;
+}
+.overfall ul.large a{
+    font-size: xx-large;
+    font-weight: 400;
+}
+#myNavbar li:hover + #overfall {
+    display: flex;
+}
+.container1 h1{
+    font-size: 60px!important;
+}
 
 
 
@@ -135,7 +158,7 @@ h6{
         min-height: 350px;
     }
     .picture1{
-        background-image: url(./images/applep.jpg);
+        background-image: url(./images/applep.jpg)!important;
     }
     .picture2{
         background-image: url(./images/picture2s.jpg);
@@ -146,7 +169,10 @@ h6{
     footer p, span{
         font-size: smaller;
     }
-
+    .container1 h1{
+        font-size: xx-large!important;
+    }
+    
 }
 
 @media (max-width: 767.98px) {
@@ -158,7 +184,7 @@ h6{
 
     }
     .picture1{
-        background-image: url(./images/applep.jpg);
+        background-image: url(./images/applep.jpg)!important;
     }
     .picture2{
         background-image: url(./images/picture2s.jpg);
@@ -175,12 +201,12 @@ h6{
     footer p, span{
         font-size: small;
     }
+    .container1 h1{
+        font-size: 30px!important;
+    }
 }
 
 @media (max-width: 991.98px) {
-    .picture1{
-        background-image: url(./images/applel.jpg);
-    }
     .album1{
         min-height: 450px;
     }
@@ -199,6 +225,9 @@ h6{
     footer p, span{
         font-size: medium;
     }
+    .container1 h1{
+        font-size: 40px!important;
+    }
 }
 
 @media (max-width: 1199.98px) {
@@ -213,43 +242,4 @@ h6{
 }
 @media (min-width: 1400px) {
     
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bgsalmon{
-    background-color: salmon;
-}
-.bgaqua{
-    background-color: aqua;
-}
-.bgseagreen{
-    background-color: seagreen;
-}
-.bggreen{
-    background-color: green;
-}
-.bgyellow{
-    background-color: yellow;
-}
-.bgiphone{
-    background-color: var(--bgiphone);
-}
-.bgvrbox{
-    background-color: var(--bgvrbox);
-}
-.bgcard{
-    background-color: var(--bgcard);
 }
