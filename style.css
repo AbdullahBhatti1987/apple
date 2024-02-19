@@ -157,7 +157,9 @@ h6{
         min-height: 450px;
 
     }
-    
+    .picture1{
+        background-image: url(./images/applep.jpg);
+    }
     .picture2{
         background-image: url(./images/picture2s.jpg);
     }
